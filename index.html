@@ -1,5 +1,6 @@
 ﻿<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2">
@@ -31,8 +32,82 @@
     <script defer="defer" src="static/js/index.min.js"></script>
     <link href="static/css/main.4dfae6af.css" rel="stylesheet">
 </head>
+
 <body>
-<noscript>You need to enable JavaScript to run this app.</noscript>
-<main id="root"></main>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <main id="root"></main>
+
 </body>
+
 </html>
+
+
+<!-- <div id="customModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeCustomModal()"
+            style="position:absolute; top:10px; right:20px; font-size:2rem; color:red; cursor:pointer;">&times;</span>
+
+
+        <div id="galleryContainer" style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+            <img src="/image/gallery/1.png" class="modal-gallery-img" />
+            <img src="/image/gallery/2.png" class="modal-gallery-img" />
+            
+        </div>
+    </div>
+</div>
+<style>
+    .modal-content {
+        max-width: 90%;
+        max-height: 90%;
+        overflow: auto;
+        background-color: #111;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 20px red;
+    }
+
+    .modal-gallery-img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.2s ease;
+    }
+
+    .modal-gallery-img:hover {
+        transform: scale(1.05);
+    }
+
+    #customModal .modal-content {
+        background-color: #111;
+        padding: 2rem;
+        border-radius: 1rem;
+        max-width: 90%;
+        box-shadow: 0 0 20px red;
+        background-image: none;
+        aspect-ratio: auto;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const triggerBlock = document.querySelector('a[title="Deebo MemeDepot"]');
+
+        if (triggerBlock) {
+            triggerBlock.addEventListener('click', (e) => {
+                e.preventDefault(); // блокуємо перехід
+                openCustomModal();
+            });
+        }
+    });
+
+    function openCustomModal() {
+        document.getElementById('customModal').style.display = 'flex';
+    }
+
+    function closeCustomModal() {
+        document.getElementById('customModal').style.display = 'none';
+    }
+
+
+
+</script> -->
